@@ -61,6 +61,6 @@ proxy - proxy in HTTP(S) format that will be used for the connection.
 ```
 
 **ERRORS**:
-401 Unauthorized - missing or invalid API key.
-400 Bad Request - missing required fields in body (rqdata or proxy).
-500 Internal Server Error - problem with captcha solution.
+> 401 Unauthorized - missing or invalid API key.
+> 400 Bad Request - missing required fields in body (rqdata or proxy).
+> 500 Internal Server Error - problem with captcha solution.
