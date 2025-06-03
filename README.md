@@ -81,4 +81,4 @@ Content-Type: application/json
 | 500         | Internal Server Error| Error occurred during captcha solving process    |
 
 ## Examples
-See `examples.py` for implementation examples.
+See `examples` for implementation examples.
