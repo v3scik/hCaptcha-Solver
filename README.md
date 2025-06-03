@@ -1,19 +1,28 @@
-# hCaptcha solver for Discord.com
-Solver works perfectly for **/register** and **/invites**
+# hCaptcha Solver for Discord.com
 
-Informations about solver:
-- Average time: 16s
-- Successfully: 95%
+This hCaptcha solver works perfectly for Discord endpoints:
+- `/register`
+- `/invites`
 
-## How to access the API? 
-You can purchase access to your own key on this Discord: https://discord.gg/zJJJPjftQG
+## Solver Specifications
+- **Average solving time:** 16 seconds
+- **Success rate:** 95%
 
-## API Requests:
-API URL: http://193.111.249.67:20043/
-You can find examples in examples.py
+## API Access
+Purchase your API key by joining our Discord server:  
+👉 [https://discord.gg/zJJJPjftQG](https://discord.gg/zJJJPjftQG)
 
-**GET /health**
-Verify that the API is working properly.
+## API Documentation
+
+### Base URL
+`http://193.111.249.67:20043/`
+
+### Endpoints
+
+#### Health Check
+**GET /health**  
+Verify API availability.
+
 **Response:**
 ```json
 {
@@ -22,9 +31,10 @@ Verify that the API is working properly.
 }
 ```
 
-## hCaptcha status:
-**GET /api/status**
-Check that the hCaptcha solver is working properly
+#### Service Status
+**GET /api/status**  
+Check hCaptcha solver status.
+
 **Response:**
 ```json
 {
@@ -33,34 +43,42 @@ Check that the hCaptcha solver is working properly
 }
 ```
 
-## hCaptcha solving:
-**POST /api/solve**
-Endpoint to upload captcha data and proxy.
+#### Captcha Solving
+**POST /api/solve**  
+Submit captcha data for solving.
 
-**HEADERS**
-X-API-Key: <twój_klucz_api>
+**Headers:**
+```
+X-API-Key: <your_api_key>
 Content-Type: application/json
+```
 
-Payload: **JSON**
+**Request Body:**
 ```json
 {
-  "rqdata": "hCap rqdata",
-  "proxy": "login:password@host:port"
+  "rqdata": "hCaptcha rqdata",
+  "proxy": "username:password@host:port"
 }
 ```
 
-rqdata - the data required to solve the captcha (received, for example, from the frontend).
-proxy - proxy in HTTP(S) format that will be used for the connection.
+**Parameters:**
+- `rqdata` - Required captcha challenge data (obtained from frontend)
+- `proxy` - HTTP/HTTPS proxy for the connection
 
-**Response**:
+**Successful Response:**
 ```json
 {
   "status": "solved",
-  "solution": "<captcha key>"
+  "solution": "<captcha_token>"
 }
 ```
 
-**ERRORS**:
-> 401 Unauthorized - missing or invalid API key.
-> 400 Bad Request - missing required fields in body (rqdata or proxy).
-> 500 Internal Server Error - problem with captcha solution.
+### Error Responses
+| Status Code | Error                | Description                                      |
+|-------------|----------------------|--------------------------------------------------|
+| 401         | Unauthorized         | Missing or invalid API key                       |
+| 400         | Bad Request          | Missing required fields (rqdata or proxy)        |
+| 500         | Internal Server Error| Error occurred during captcha solving process    |
+
+## Examples
+See `examples.py` for implementation examples.
