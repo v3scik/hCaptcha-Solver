@@ -7,7 +7,7 @@
 
 This hCaptcha solver works perfectly for Discord endpoints:
 - `/register`
-- `/invites`
+- `/invite`
 
 ## Solver Specifications
 - **Average solving time:** 16 seconds
