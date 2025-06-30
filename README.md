@@ -1,6 +1,7 @@
 # hCaptcha Solver for Discord.com
 
-> ⚠️ **Project Status Notice**  
+> ⚠️ **Project Status Notice**
+> **UPDATE**: We currently works on undetection for our service. #staytuned
 > Please note that this solver is **no longer actively maintained** due to detection issues on the Discord platform.
 > If we are able to remove detection from the Discord site, rest assured that the hCaptcha Solver will be restored.
 
