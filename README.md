@@ -1,10 +1,8 @@
-# hCaptcha Solver for Discord.com
+# AI hCaptcha Solver for Discord.com
 
-> ⚠️ **Project Status Notice**
-> **UPDATE**: We currently works on undetection for our service. #staytuned
-> Please note that this solver is **no longer actively maintained** due to detection issues on the Discord platform.
-> If we are able to remove detection from the Discord site, rest assured that the hCaptcha Solver will be restored.
-
+## ✅ NEW STATUS: UNFLAGGED & WORKING
+> **71 stars**  - Release (paid-only)
+> **100 stars** - Release Free (src & ai models)
 
 This hCaptcha solver works perfectly for Discord endpoints:
 - `/register`
@@ -14,9 +12,9 @@ This hCaptcha solver works perfectly for Discord endpoints:
 - **Average solving time:** 16 seconds
 - **Success rate:** 95%
 
-## API Access
+## API ACCESS
 Purchase your API key by joining our Discord server:  
-👉 [https://discord.gg/zJJJPjftQG](https://discord.gg/zJJJPjftQG)
+👉 [https://discord.gg/YvXknpN6sN](https://discord.gg/YvXknpN6sN)
 
 ## API Documentation
 
