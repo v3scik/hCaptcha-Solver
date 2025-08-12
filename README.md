@@ -1,8 +1,8 @@
 # AI hCaptcha Solver for Discord.com
 
 ## ✅ NEW STATUS: UNFLAGGED & WORKING
-> **71 stars**  - Release (paid-only)
-> **100 stars** - Release Free (src & ai models)
+- **71 stars**  - Release (paid-only)
+- **100 stars** - Release Free (src & ai models)
 
 This hCaptcha solver works perfectly for Discord endpoints:
 - `/register`
